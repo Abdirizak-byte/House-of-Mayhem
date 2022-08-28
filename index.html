@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>House of Creative Mayhem</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  img{
+    width: 500px;
+  }
+  body, html {
+    height: 100%;
+    width: 100%;
+    background: #F5F5F5;
+    position: absolute;
+  }
+     
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>House of</b> Mayhem</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#about-section" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img src="images/flying dream.png" class="main" alt="Art" width="1300" height="800">
+  <style>
+    .main{
+      width: 1500px;
+    }
+  </style>
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-black"><span class="w3-padding w3-white w3-opacity-min"><b>House of</b></span> <span class="w3-hide-small w3-text-light-grey">Mayhem</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  
+<!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-black w3-padding-16">Projects</h3>
+  </div>
+
+<!-- Gallery Section -->
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/art1.jpg" style="width:100%">
+  <img class="mySlides" src="images/art10.jpg" style="width:100%">
+  <img class="mySlides" src="images/art2.jpg" style="width:100%">
+  <img class="mySlides" src="images/art3.jpg" style="width:100%">
+  <img class="mySlides" src="images/art7.jpg" style="width:100%">
+  <img class="mySlides" src="images/art5.jpg" style="width:100%">
+  <img class="mySlides" src="images/art6.jpg" style="width:100%">
+  <img class="mySlides" src="images/art8.jpg" style="width:100%">
+  <img class="mySlides" src="images/art9.jpg" style="width:100%">
+  
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  
+<!-- About Section -->
+  <div id="about-section">
+    <h1>About Us Page</h1>
+    
+  </div>
+
+ 
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/art17.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title">CEO & Founder</p>
+          <p>I love putting together desperate things and making a cohesive whole that is greater(wEiRdEr) than the sum of it's parts. i delight in finding beauty in unexpected places and creating balance without symmetry. I hope my work winks at you, flirts with you, and listens to you with rapt attention. If my art could speak in words, it would say, "Have hope, my darling, for the world is full of Love, Truth, and Beauty.</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+     <!--<div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images/art11.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Dog?</h2>
+              <p class="title">CEO & Founder</p>
+              <p>
+                Dog?
+              </p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>-->
+          
+ 
+    
+  
+  
+  <style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .me {
+    align: center;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  #about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  </style>
+  </div>
+   <!-- Get to know My Art --> 
+	    <div class="w3-container w3-padding-32" id="info">
+		    <h3 class="w3-border-bottom w3-border-black w3-padding-16"></h3>
+	    </div>
+		    
+    <!-- Image of location/map -->
+<div class="w3-container">
+  <img src="images/art15.jpg" class="w3-image" style="width:100%">
+</div>
+   <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Contact</b></h3>
+    <p>Lets get in touch and talk about some ART!!!!.</p> <form action="https://formsubmit.co/jdontae71@gmail" method="POST">
+	
+    <form action="https://formsubmit.co/jdontae71@gmail.com" method="post" enctype="text/plain">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+	  <input type="hidden" name="_next" value="https://mmmmorpheus.github.io/Testingmayhem/thanks.html">
+      <button class="w3-button w3-black w3-section" type="submit">
+        SEND MESSAGE
+      </button>
+    </form>
+  </div>
+   
+
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <pre><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> | Designed by Dontae jackson</p></pre> 
+  
+ <address>
+Call us at:(609) 798-1778
+</address>
+</footer>
+</body>
+</html>
